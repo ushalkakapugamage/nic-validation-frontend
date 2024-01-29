@@ -1,0 +1,38 @@
+.tbl {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tbl-rw {
+    background-color: #ffffff;
+    padding: 10px;
+
+}
+
+.tbl-hd {
+    padding: 10px;
+    background-color: rgb(51, 51, 51);
+    color: #ffffff;
+
+}
+
+.tbl-dt {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+
+}
+
+.exp-btn  {
+    background-color: #122146;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 1100px;
+}
+

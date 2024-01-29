@@ -1,0 +1,45 @@
+
+.content {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: end;
+    justify-content: center;
+    align-items: stretch;
+}
+.table{
+    margin-left: 50px;
+    width: 400px;
+    
+}
+.tbl-heading{
+    padding: 10px;
+    background-color: #6990F2;
+    color: #ffffff;
+}
+
+
+.tbl-row {
+    width: 100%;
+    background-color: #ffffff;
+  
+  }
+
+  .tbl-data {
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 5px;
+    align-items: center;
+    
+  }
+  
+
+  .tbl-row:hover {
+    background-color: #b4b4b4; 
+    cursor: pointer;
+  }
+
+
+  
