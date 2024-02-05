@@ -9,6 +9,7 @@ import SideBar from "./components/navbar/SideBar";
 
 function App() {
   const [fileName, setFileName] = useState<String>();
+  
   const handleFileName = (name: String) => {
     setFileName(name);
   }

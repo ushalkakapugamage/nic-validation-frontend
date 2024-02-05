@@ -9,7 +9,6 @@ interface Record {
   nic: string;
   birthdate: string;
   FileName: string;
-  // Add more properties as needed
 }
 
 const TableView = (prop: any) => {

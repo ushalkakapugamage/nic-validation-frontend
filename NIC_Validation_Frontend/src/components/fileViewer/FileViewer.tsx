@@ -5,8 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 const FileViewer = (prop: any) => {
     const [fileNames, setFileNames] = useState<string[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
 
     const navigation = useNavigate();
 
@@ -23,30 +21,15 @@ const FileViewer = (prop: any) => {
                 if (response.data && response.data.response && response.data.response.data && Array.isArray(response.data.response.data)) {
                     setFileNames(response.data.response.data);
                 } else {
-                    setError('Invalid data format received from the server');
+                    alert('Invalid data format received from the server');
                 }
             } catch (error) {
-                setError('Error fetching data');
-                console.error('Error fetching data:', error);
-            } finally {
-                setLoading(false);
+                alert('Error fetching data');
             }
         };
 
         fetchData();
-    }, []);
-
-    if (loading) {
-        return <div>Loading...</div>;
-    }
-
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
-
-    if (fileNames.length === 0) {
-        return <div>No records available</div>;
-    }
+    }, [fileNames]);
 
     return (
         <div className='tbl-container'>
